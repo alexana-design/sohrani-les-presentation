@@ -549,3 +549,13 @@ html{scroll-padding-top:12px}body.presentation{padding-bottom:72px}.deck{padding
  .options-accent-one{left:auto;right:18px;top:20px}
  .options-accent-two{left:auto;right:53px;top:31px}
 }
+
+/* Масштабирование графики вместе с типографикой на широких экранах.
+   База согласования: слайд шириной около 940 px. */
+@media(min-width:901px){
+ .deck .slide>.brand{width:14cqw}
+ .cover-paper .cover-portrait-wrap{width:14.5cqw;height:14.5cqw}
+ .cover-seal{width:12.8cqw;height:12.8cqw}
+ .when-back{padding:1.7cqw}
+}
+@media(max-width:900px){.when-back{padding:14px}}
