@@ -5,6 +5,20 @@
   const counter = document.querySelector('#page-count');
   let active = 0;
   let pending = false;
+  const cover = document.querySelector('.cover');
+  const coverCard = cover?.querySelector('.polaroid');
+  const coverNote = cover?.querySelector('.cover-note');
+  function alignCoverNote() {
+    if (!coverCard || !coverNote) return;
+    if (matchMedia('(max-width:900px)').matches) {
+      coverNote.style.removeProperty('top');
+      coverNote.style.removeProperty('bottom');
+      return;
+    }
+    const cardBottom = coverCard.offsetTop + coverCard.offsetHeight;
+    coverNote.style.top = `${cardBottom + (cover.clientHeight - cardBottom - coverNote.offsetHeight) / 2}px`;
+    coverNote.style.bottom = 'auto';
+  }
   function update() {
     pending = false;
     const reference = Math.min(innerHeight * .5, 360);
@@ -34,6 +48,10 @@
   });
   addEventListener('scroll', () => { if (!pending) { pending = true; requestAnimationFrame(update); } }, {passive: true});
   addEventListener('resize', update);
+  addEventListener('resize', alignCoverNote);
+  if (coverCard && typeof ResizeObserver !== 'undefined') new ResizeObserver(alignCoverNote).observe(coverCard);
+  document.fonts.ready.then(alignCoverNote);
+  alignCoverNote();
   document.fonts.ready.then(update);
   update();
 })();

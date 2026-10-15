@@ -39,7 +39,7 @@ body.presentation{background:#e9e9e2;margin:0;padding:0 0 90px}
 .care{background:#dce7ad}.care .backdrop{width:62%;object-position:50% 42%}.care-card{position:absolute;right:6%;top:13%;width:53%;padding:38px 44px;background:#fff9ec;border-radius:3px 40px 3px 40px;transform:rotate(-2deg)}.care h2{font-size:4.5cqw;margin-bottom:24px}.care-card p{font-size:1.4cqw;line-height:1.45}.care-promise{margin-top:23px}.years{display:block;font-size:8cqw;font-weight:500;letter-spacing:-.06em;line-height:1;margin:7px 0 13px}.years em{font-size:5cqw}
 
 /* 10 — воспоминания: редакционный фотоколлаж. */
-.memories{background:#fff9ec}.memories-heading{position:absolute;left:5%;top:17%;width:43%}.memories h2{font-size:4.9cqw}.memories h2 em{display:block}.memories-copy{position:absolute;left:5%;top:49%;width:39%}.memories-copy p{font-size:1.45cqw;line-height:1.5}.memories-copy p+p{margin-top:22px}
+.memories{background:#fff9ec}.memories .slide-number{color:#fff9ec}.memories-heading{position:absolute;left:5%;top:17%;width:43%}.memories h2{font-size:4.9cqw}.memories h2 em{display:block}.memories-copy{position:absolute;left:5%;top:49%;width:39%}.memories-copy p{font-size:1.45cqw;line-height:1.5}.memories-copy p+p{margin-top:22px}
 .memory-one{position:absolute;left:55%;top:14%;width:24%;height:66%;transform:rotate(-7deg);padding-bottom:14px}.memory-one>img{object-position:50% 42%}.memory-two{position:absolute;right:2%;top:21%;width:27%;height:34%;background:#dce7ad;transform:rotate(8deg);padding:12px}.memory-two>img{width:100%;height:100%;object-fit:cover;object-position:center}.memory-three{position:absolute;right:5%;bottom:7%;width:24%;height:43%;transform:rotate(5deg);padding-bottom:16px}.memory-three>img{object-position:50% 26%}
 
 /* 11 — опыт: типографика, а не фотографии с неподтверждённой привязкой к компаниям. */
@@ -81,5 +81,471 @@ html{scroll-padding-top:12px}body.presentation{padding-bottom:72px}.deck{padding
 @media(max-width:360px){.deck .polaroid h1{font-size:28px}.deck .polaroid p{font-size:13px}.deck .cover-note{font-size:13px}.deck h2{font-size:32px}.people,.options,.when,.memories,.cases{padding-left:22px;padding-right:22px}.people h2{font-size:33px}.deck .org-copy h2{font-size:30px}.deck .field-label strong{font-size:20px}.weekend h2{font-size:36px}.weekend-paper{padding-left:26px;padding-right:26px}.when h2{font-size:35px}.group-number{font-size:62px}.group-number small{font-size:17px}.care h2{font-size:31px}.care-card{padding-left:23px;padding-right:23px}.memories h2{font-size:34px}.cases h2{font-size:33px}.case-feature p{font-size:24px}.contact-card{padding-left:25px;padding-right:25px}.contact h2{font-size:32px}.contact-links a{font-size:12px}.contact-links .telegram{font-size:14px;gap:12px}}
 @media(max-width:900px){.weekend .brand,.care .brand,.contact .brand{background:#193f30;padding:8px 11px;width:140px;border-radius:4px}}
 @media(max-width:900px){.deck .org-token{top:83px;right:8px;width:128px;height:98px}.weekend h2 em{font-size:.84em;white-space:nowrap}}
+/* Локальная редакция 15 октября: фотографии и три равнозначных кейса. */
+.weekend:after{background:linear-gradient(90deg,#102c2199 0%,#102c2145 39%,transparent 60%)}
+.weekend .backdrop{object-position:center 64%}
+.when-heading{width:55%}.when-copy{width:47%;top:36%}
+.when-photo{right:6%;top:12%;width:28%;height:auto;aspect-ratio:2/3;padding:12px;transform:rotate(4deg)}
+.when-photo>img{height:auto;aspect-ratio:1706/2560;object-fit:contain}
+.season-note{right:4%;bottom:6%;font-size:1.6cqw}
+.care .backdrop{left:-15%;width:115%;height:100%;object-position:center 30%}
+.care-card{right:5%;top:28%;width:44%;padding:32px 37px;transform:rotate(-2deg)}
+.care h2{font-size:4cqw;margin-bottom:22px}.care-card p{font-size:1.32cqw;line-height:1.47}.care-promise{margin-top:18px}
+.care .brand{background:transparent;padding:0;width:132px;border-radius:0}.care .slide-number{color:#fff9ec}
+.care-badge{position:absolute;right:6.5%;top:11%;width:12.2%;aspect-ratio:1;border-radius:50%;background:#dce7ad;color:#193f30;transform:rotate(10deg);box-shadow:0 5px 14px #193f3022;z-index:4}
+.care-badge svg{position:absolute;inset:0;display:block;width:100%;height:100%;fill:currentColor;font:500 10.3px Onest,sans-serif;letter-spacing:1px}
+.care-badge>span{position:absolute;inset:26% 15%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0}
+.care-badge strong{font-size:4.7cqw;line-height:.9;font-weight:500;letter-spacing:-.06em}.care-badge em{font-size:2cqw;line-height:1.2}
+.memory-photo{position:absolute;inset:0 0 0 auto;width:51%;height:100%;overflow:hidden}
+.memory-photo>img{width:100%;height:100%;object-fit:cover;object-position:68% center}
+.girl-frame{position:absolute;left:24%;top:22%;width:70%;height:56%;border:12px solid #fff9ec;border-bottom-width:24px;border-radius:7px;transform:rotate(5deg);box-shadow:0 8px 22px #193f3020}
+.memory-photo .hole-a{top:18%;left:-30px}.memory-photo .hole-b{left:8%;top:9%}.memory-photo .hole-d{left:-19px;bottom:15%;width:49px;height:49px}
+.memory-dot{position:absolute;border-radius:50%;background:url("presentation-assets-jumping-girl-blue-sky.png") 30% 58%/550%;box-shadow:0 3px 7px #193f3020}
+.memory-dot-one{width:35px;height:35px;left:44%;top:13%}.memory-dot-two{width:23px;height:23px;left:46%;bottom:12%}
+.cases-heading{top:16%;width:90%}.cases h2{font-size:4.8cqw}.cases h2 em{display:inline}
+.case-grid{position:absolute;left:5%;right:5%;top:38%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.2%;align-items:stretch}
+.case-card{background:#fff9ec;padding:10px 10px 24px;border-radius:5px;box-shadow:0 7px 16px #193f3014}
+.case-photo{aspect-ratio:3/2;overflow:hidden;border-radius:2px}.case-photo>img{width:100%;height:100%;object-fit:contain}
+.case-card figcaption{padding:18px 12px 0}.case-card h3{font-size:2cqw;font-weight:500;letter-spacing:-.045em;line-height:1.15;margin:0 0 11px}
+.case-card p{font-size:1.25cqw;line-height:1.45}
+@media(min-width:901px) and (max-width:1100px){
+.when-copy{top:37%;width:48%}.when-photo{top:16%;width:29%;height:auto}.when h2{font-size:5cqw}
+.care-card{top:27%;padding:28px 30px;width:46%}.care h2{font-size:4.2cqw}.care-card p{font-size:1.5cqw}.care-badge{top:11%;width:13%}
+.cases-heading{top:20%}.case-grid{top:42%}.case-card figcaption{padding:15px 7px 0}.case-card p{font-size:1.5cqw}
+}
+@media(max-width:900px){
+.when-heading,.when-copy{width:100%;top:auto}.when-photo{top:auto;right:auto;width:85%;height:auto;aspect-ratio:auto;padding:11px;margin:32px auto 0!important}.when-photo>img{height:auto;aspect-ratio:auto;object-fit:contain}.season-note{right:auto;bottom:auto;font-size:21px;margin:-12px auto 0}
+.care{padding-top:330px}.care .backdrop{left:0;width:100%;height:425px;object-position:42% center}.care-card{width:100%;right:auto;top:auto;padding:70px 27px 30px}.care h2{font-size:35px}.care-card p{font-size:15px}.care .brand{background:transparent;padding:0;width:112px;border-radius:0}.care-badge{width:128px;right:29px;top:271px}.care-badge strong{font-size:48px}.care-badge em{font-size:23px}
+.memories{padding-bottom:0}.memories-copy{margin-bottom:30px}.memory-photo{position:relative;inset:auto;width:calc(100% + 50px);height:465px;margin-left:-25px!important}.memory-photo>img{object-position:67% center}.girl-frame{left:22%;width:69%;top:22%;height:56%;border-width:9px;border-bottom-width:18px}.memory-photo .hole-a{top:-28px;left:7%;width:65px;height:65px}.memory-photo .hole-b{left:79%;top:-15px;width:38px;height:38px}.memory-photo .hole-d{left:3%;bottom:12%;width:28px;height:28px}.memory-dot{display:none}
+.cases-heading{top:auto;width:100%}.cases h2{font-size:37px}.cases h2 em{display:block}.case-grid{position:relative;left:auto;right:auto;top:auto;grid-template-columns:minmax(0,1fr);gap:24px;margin-top:32px}.case-card{padding:9px 9px 24px}.case-card figcaption{padding:18px 13px 0}.case-card h3{font-size:27px;margin-bottom:11px}.case-card p{font-size:16px;line-height:1.5}
+}
+@media(max-width:360px){.care h2{font-size:31px}.care-card{padding-left:23px;padding-right:23px}.memories .memory-photo{width:calc(100% + 44px);margin-left:-22px!important;height:430px}.cases h2{font-size:33px}.case-card h3{font-size:25px}}
+/* Слайд 10: нижняя панель поста, без верхней шапки. */
+.girl-frame{left:17%;top:10%;width:70%;height:calc(75% + 36px);border-width:16px;border-bottom-width:60px}
+.memory-photo>img{transform:none}
+.post-actions{position:absolute;bottom:-60px;left:-16px;right:-16px;height:60px;display:flex;align-items:center;gap:15px;padding:0 17px;color:#193f30}
+.post-actions svg{display:block;width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.post-actions .post-bookmark{margin-left:auto}
+@media(max-width:900px){.memories .memory-photo{height:465px}.girl-frame{left:17%;top:12%;width:69%;height:calc(72% + 32px);border-width:12px;border-bottom-width:50px}.memory-photo>img{transform:none}.post-actions{bottom:-50px;left:-12px;right:-12px;height:50px;padding:0 13px;gap:12px}.post-actions svg{width:22px;height:22px}}
+/* Слайд 11: живой ритм открыток и бумажная зелень. */
+.case-grid{z-index:2;gap:2.8%}
+.case-card:nth-child(1){transform:rotate(3deg)}
+.case-card:nth-child(2){transform:translateY(16px) rotate(-1.5deg)}
+.case-card:nth-child(3){transform:rotate(-4deg)}
+.case-leaf{position:absolute;object-fit:contain;pointer-events:none;width:7.5%;height:19%;z-index:1}
+.case-leaf-one{right:2%;top:25%;transform:rotate(31deg)}
+.case-leaf-two{left:30%;bottom:2%;transform:rotate(-47deg)}
+@media(max-width:900px){.case-grid{gap:38px}.case-card:nth-child(1){transform:rotate(2.5deg)}.case-card:nth-child(2){transform:rotate(-1.5deg)}.case-card:nth-child(3){transform:rotate(-3deg)}.case-leaf{width:75px;height:100px}.case-leaf-one{right:4px;top:203px;transform:rotate(34deg)}.case-leaf-two{left:4px;bottom:13px;transform:rotate(-42deg)}}
+/* Квадратные кадры и двухуровневый заголовок слайда 11. */
+.cases-heading{top:6%;width:90%;z-index:0}.cases h2{font-size:26cqw;line-height:.78}.cases-title{display:block;white-space:nowrap;letter-spacing:-.065em}
+.cases-subtitle{position:absolute;left:5%;bottom:4%;width:90%;text-align:center;font-size:2.5cqw;line-height:1.12;letter-spacing:-.045em}.cases .cases-subtitle em{display:inline}
+.case-grid{left:17.5%;right:17.5%;top:32%;gap:2.8%}.case-card{padding:16px 16px 24px}.case-card h3{font-size:1.8cqw;margin-bottom:8px}.case-card p{font-size:1.1cqw}.case-card figcaption{padding:14px 9px 0}.case-photo{aspect-ratio:1}.case-photo>img{object-fit:cover;object-position:center}
+.case-leaf{width:8%;height:15%}.case-leaf-one{left:5%;right:auto;top:auto;bottom:14%;transform:rotate(-27deg)}.case-leaf-two{left:auto;right:5%;top:48%;bottom:auto;transform:rotate(29deg)}.case-leaf-three{right:13%;bottom:14%;width:4.5%;height:9%;transform:rotate(80deg)}
+@media(min-width:901px) and (max-width:1100px){.cases-heading{top:9%}.cases h2{font-size:26cqw}.case-grid{top:32%;left:17%;right:17%}.case-card figcaption{padding:13px 5px 0}.case-card p{font-size:1.2cqw}.cases-subtitle{font-size:2.5cqw;bottom:3%}}
+@media(max-width:900px){.cases{padding-top:90px}.cases-heading{top:auto;width:100%}.cases h2{font-size:24cqw}.cases-subtitle{position:relative;left:auto;bottom:auto;width:100%;font-size:26px;line-height:1.12;margin-top:35px}.case-grid{left:auto;right:auto;top:auto;margin-top:15px;gap:38px}.case-card{padding:14px 14px 24px}.case-card h3{font-size:27px;margin-bottom:11px}.case-card p{font-size:16px}.case-card figcaption{padding:18px 10px 0}.case-leaf{width:63px;height:75px}.case-leaf-one{top:190px;bottom:auto;left:1px;right:auto}.case-leaf-two{left:auto;right:0;top:48%;bottom:auto}.case-leaf-three{left:2px;right:auto;bottom:90px;width:50px;height:65px}}
+@media(max-width:900px){.cases .cases-subtitle{font-size:26px}}
+@media(max-width:360px){.cases .cases-subtitle{font-size:24px}}
+.care{background-image:url("presentation-assets-care-seedling-wide.jpg");background-size:cover;background-position:center}
+.care .backdrop{left:-32%;width:115%;mask-image:linear-gradient(90deg,#000 80%,transparent 100%)}
+.care-card{top:14%;aspect-ratio:1;padding:38px 37px;display:flex;flex-direction:column;justify-content:center;border-radius:3px 40px 0 0;mask:none;clip-path:url(#care-card-edge)}
+@media(min-width:901px) and (max-width:1100px){.care-card{top:12%;padding:30px}.care .backdrop{left:-32%;width:115%}}
+@media(max-width:900px){.care{background-image:none}.care .backdrop{left:0;width:100%;mask-image:none}.care-card{top:auto;aspect-ratio:auto;padding:70px 27px 42px}}
+@media(max-width:360px){.care-card{padding-left:23px;padding-right:23px}}
+.contact-card.stamp{mask:none;clip-path:url(#contact-card-edge);border-radius:0}
+.care-badge{right:1.8%;top:4%}
+@media(max-width:900px){.care-badge{right:6px;top:260px}}
+@media(max-width:900px){.contact-card.stamp{clip-path:url(#contact-card-edge-mobile);border-radius:0}}
+/* Слайд 8: взаимное расположение карточек и печати по референсу 290f585a. */
+.when-heading{width:43%;top:17%}.when-copy{width:33%;top:33%}
+.group-card{margin-top:24px;background:#fff9ec;padding:20px 14px 21px 34px;border-radius:6px 0 0 6px;clip-path:url(#group-card-edge)}
+.group-card .group-label{font-size:1.25cqw;line-height:1.4}.group-card .group-number{font-size:8cqw;line-height:1;margin:12px 0 0;letter-spacing:-.06em}.group-card .group-number small{font-size:1.8cqw}
+.when-copy .when-note{font-size:1.25cqw;line-height:1.45;margin-top:20px}
+.when-collage{position:absolute;right:5%;top:8%;width:44%;aspect-ratio:950/1060;isolation:isolate}
+.when-back{position:absolute;left:24%;top:-5%;width:82%;height:95%;padding:16px;background:#fff9ec;transform:rotate(5deg);clip-path:url(#when-card-edge);z-index:0}
+.when-back-window{width:100%;height:100%;overflow:hidden}
+.when-back-window>img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.3);transform-origin:50% 15%}
+.when-front{position:absolute;left:0;top:16.5%;width:72.6%;height:82.5%;background:#fff9ec;padding:10px;border-radius:7px;transform:rotate(-2.5deg);box-shadow:0 8px 18px #193f3020;overflow:hidden;z-index:1}
+.when-front>img{width:100%;height:100%;object-fit:cover;object-position:43% center;border-radius:0}
+.season-badge{position:absolute;left:65.3%;top:69.9%;width:19%;aspect-ratio:1;background:#f5bc94;border-radius:50%;color:#193f30;transform:rotate(12deg);box-shadow:0 4px 10px #193f3017;z-index:3}
+.season-badge svg{position:absolute;inset:0;display:block;width:100%;height:100%;fill:currentColor;font:500 14.5px Onest,sans-serif;letter-spacing:.5px}
+.season-badge .sprout{position:absolute;left:50%;top:50%;width:46%;height:46%;transform:translate(-50%,-50%);object-fit:contain}
+@media(min-width:901px) and (max-width:1100px){.when-heading{top:19%;width:43%}.when-copy{top:35%;width:35%}.when-copy>p{font-size:1.5cqw}.group-card{padding:17px 10px 17px 30px}.group-card .group-label,.when-copy .when-note{font-size:1.3cqw}.group-card .group-number{font-size:7.8cqw}.when-collage{top:15%;width:43%;right:5%}}
+@media(max-width:900px){.when-heading,.when-copy{width:100%;top:auto}.when-copy{margin-top:28px}.group-card{margin-top:24px;padding:22px 15px 22px 27px}.group-card .group-label{font-size:15px}.group-card .group-number{font-size:72px;margin-top:13px}.group-card .group-number small{font-size:17px}.when-copy .when-note{font-size:15px;margin-top:20px}.when-collage{position:relative;right:auto;top:auto;width:calc(100% + 12px);margin:40px -6px 16px}.when-front{padding:7px;border-radius:7px}.when-front>img{border-radius:0}.when-back{padding:10px;clip-path:url(#when-card-edge-mobile)}.season-badge{width:96px;left:calc(75% - 48px);top:calc(78% - 48px)}}
+@media(max-width:360px){.group-card .group-number{font-size:50px}.group-card .group-number small{font-size:15px}}
+/* 07 — фотография сверху, текст в нижней половине. */
+.options-split .options-heading{left:5%;top:55%;width:34%}
+.options-split h2{font-size:4.7cqw;max-width:100%}
+.options-split .options-copy{left:46%;top:55%;width:49%}
+.options-split .options-copy>p{font-size:1.2cqw;line-height:1.4}
+.options-split .option-list{margin:14px 0 17px}
+.options-split .option-list li{font-size:1.22cqw;padding:11px 0 11px 32px}
+.options-split .option-list li:before{top:13px}
+.options-split .options-copy .options-note{font-size:1.05cqw;line-height:1.45}
+.options-forest-photo{position:absolute;left:0;top:0;width:100%;height:50%;overflow:hidden}
+.options-forest-photo>img{width:100%;height:100%;object-fit:cover;object-position:center 28%;transform:scale(1.2);transform-origin:50% 90%}
+.options-photo-dot{position:absolute;border-radius:50%;background-image:url("presentation-assets-team-forest.jpg");background-size:550%;box-shadow:0 3px 7px #193f3020}.options-photo-dot-one{width:38px;height:38px;left:35%;top:53%;background-position:49% 54%}.options-photo-dot-two{width:24px;height:24px;left:39%;top:56%;background-position:24% 68%}
+.options-hole{position:absolute;border-radius:50%;background:#fff9ec}
+.options-hole-a{width:70px;height:70px;left:27%;bottom:-35px}
+.options-hole-b{width:35px;height:35px;left:35%;bottom:28px}
+.options-hole-c{width:48px;height:48px;right:17%;bottom:-24px}
+.options-sprout{position:absolute;width:9%;left:26%;bottom:3%;transform:rotate(18deg);z-index:3}
+@media(min-width:901px) and (max-width:1100px){.options-split .options-heading{top:55%}.options-split .options-copy{top:55%}.options-split .options-copy>p,.options-split .option-list li{font-size:1.3cqw}.options-split .option-list li{padding:9px 0 9px 28px}.options-split .options-copy .options-note{font-size:1.1cqw}}
+@media(max-width:900px){.deck .options-split{padding:0 25px 40px;display:flex;flex-direction:column}.options-forest-photo{position:relative;order:-1;width:calc(100% + 50px);height:270px;margin:0 -25px!important}.options-forest-photo>img{object-position:center 40%}.options-photo-dot-one{width:28px;height:28px;left:auto;right:24px;top:285px}.options-photo-dot-two{width:19px;height:19px;left:auto;right:61px;top:298px}.options-split .options-heading{position:relative;left:auto;top:auto;width:100%;margin-top:35px}.options-split h2{font-size:35px}.options-split .options-copy{position:relative;left:auto;top:auto;width:100%;margin-top:27px}.options-split .options-copy>p,.options-split .option-list li{font-size:15px}.options-split .options-copy .options-note{font-size:13px}.options-sprout{display:none}.options-hole-a{left:15%;bottom:-28px;width:56px;height:56px}.options-hole-b{left:38%;bottom:25px;width:29px;height:29px}.options-hole-c{right:12%;bottom:-19px;width:38px;height:38px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{@page{size:13.333in 7.5in;margin:0}body.presentation{padding:0;background:white}.deck{display:block;padding:0;max-width:none}.deck .slide{width:13.333in;height:7.5in;min-height:0;aspect-ratio:16/9;break-after:page;border-radius:0;box-shadow:none;margin:0}.deck-nav,.skip-link{display:none}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+
+
+/* Согласованные пакетные правки: общая ось и новые композиции. */
+.deck .slide>.brand{left:5%;top:30px;padding:0;background:transparent;border-radius:0;width:132px}
+.cover-paper.stamp{mask:none;clip-path:url(#cover-paper-edge)}
+.cover-photo.stamp{mask:none;clip-path:url(#cover-photo-edge);padding:23px}
+.cover-paper .cover-portrait-wrap{display:block;width:136px;height:136px;flex:none;border-radius:50%;overflow:hidden;margin-bottom:3px}
+.cover-portrait-wrap>img.cover-portrait{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 35%;transform:scale(1.65);transform-origin:50% 36%}
+.cover-seal svg{position:absolute;inset:0;display:block;font-size:12px;letter-spacing:1px}
+.planting .backdrop{transform:scale(1.23);transform-origin:0 85%;object-position:center}
+.planting-copy.stamp{mask:none;clip-path:url(#planting-card-edge)}
+.lunch-memory{position:absolute;right:4%;bottom:6%;width:34%;height:27%;padding:8px 8px 42px;background:#e2edb5;transform:rotate(-5deg);border-radius:5px;box-shadow:0 7px 18px #193f3026;z-index:5}
+.lunch-memory>img{width:100%;height:100%;object-fit:cover;object-position:center 52%;border-radius:1px}
+.lunch-memory figcaption{position:absolute;left:8px;right:8px;bottom:12px;text-align:center;font-size:1.25cqw;line-height:1.15}
+.org-photo{border-radius:7px}.org-photo>img{border-radius:0}
+.org-shadow{position:absolute;right:5%;top:12%;width:50%;transform:rotate(2deg);filter:drop-shadow(0 11px 12px #193f3038);z-index:2}
+.org-shadow .org-copy.stamp{position:relative;right:auto;top:auto;width:100%;transform:none;mask:none;clip-path:url(#organisation-card-edge);border-radius:0}
+.org-token{clip-path:none;border-radius:50%;width:150px;height:150px;padding:19px;gap:5px}
+.org-token img{width:34px;height:49px}.org-token span{font-size:15px}.org-token em{font-size:17px}
+.case-grid{left:15%;right:15%}.case-card{padding:14.4px 14.4px 21.6px}
+.weekend.weekend-poster{background:#fff9ec}.weekend-poster:after{display:none}
+.weekend-art{position:absolute;left:5%;top:17%;width:40%;height:69%;text-align:center}
+.weekend-art h2{position:relative;font-size:3.25cqw;line-height:1.03;letter-spacing:-.05em;z-index:2}
+.weekend-image{position:absolute;left:0;top:30%;width:100%;height:43%;overflow:hidden}
+.weekend-image>img{width:100%;height:100%;object-fit:cover;object-position:center 65%}
+.weekend-title{position:absolute;left:0;right:0;top:74%;font-size:3.35cqw;line-height:1.02;font-weight:500;letter-spacing:-.055em;z-index:2}
+.camp-circle{position:absolute;border-radius:50%;width:4.3cqw;height:4.3cqw;z-index:3;background:#f5bc94}
+.camp-circle-one{left:-5%;top:20%;background:#cce6d5}.camp-circle-two{right:-4%;top:37%;background:#dce7ad}.camp-circle-three{left:-4%;top:68%}.camp-circle-four{right:15%;bottom:-7%;width:3cqw;height:3cqw;background:#cce6d5}
+.weekend-programme{position:absolute;left:55%;top:19%;width:39%}
+.weekend-programme h3{font-size:2.2cqw;font-weight:500;letter-spacing:-.04em;margin:0 0 15px}
+.weekend-programme .day p{font-size:1.4cqw;line-height:1.48}
+.weekend-programme .day p:first-letter{font-size:inherit}
+.weekend-programme .day+.day{margin-top:26px;padding-top:22px}
+.weekend-programme .programme-note{font-size:1.15cqw;line-height:1.45}
+.options-sky .options-forest-photo{inset:0;width:100%;height:100%;z-index:-2}
+.options-sky .options-forest-photo>img{object-fit:cover;object-position:center;transform:translateY(18%);transform-origin:center}
+.options-sky{background:#8cb8d1 url("presentation-assets-team-forest.jpg") center top/cover no-repeat}
+.options-sky:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#89b5ce00 12%,#98bcd299 18%,transparent 25%);z-index:-1;pointer-events:none}
+.options-sky .options-heading{left:5%;top:15%;width:36%}
+.options-sky h2{font-size:4.1cqw}
+.options-sky .options-copy{left:48%;top:15%;width:47%}
+.options-sky .options-copy>p{font-size:1.15cqw;line-height:1.4}
+.options-sky .option-list{margin:12px 0 13px}.options-sky .option-list li{font-size:1.15cqw;padding:8px 0 8px 30px}
+.options-sky .option-list li:before{top:10px}
+.options-sky .options-copy .options-note{font-size:1.02cqw;line-height:1.4}
+@media(min-width:901px) and (max-width:1100px){
+ .org-shadow{top:15%}.org-shadow .org-copy{padding:28px 35px}
+ .case-grid{left:15%;right:15%}
+ .options-sky .options-heading,.options-sky .options-copy{top:17%}
+ .options-sky .option-list li,.options-sky .options-copy>p{font-size:1.25cqw}
+ .options-sky .options-copy .options-note{font-size:1.1cqw}
+}
+@media(max-width:900px){
+ .deck .slide>.brand{top:24px;left:25px;width:112px}
+ .deck .cover .brand{width:132px}
+ .deck .cover-paper{height:225px;top:110px;left:1%;width:47%;padding:15px;gap:8px}
+ .cover-paper .cover-portrait-wrap{width:103px;height:103px;margin:0}
+ .cover-photo.stamp{padding:16px}
+ .deck .cover{padding-top:330px}
+ .cover .polaroid{z-index:4}
+ .cover-seal{top:95px;right:15px;width:95px;height:95px}
+ .planting .backdrop{transform:scale(1.16);transform-origin:0 70%;height:480px}
+ .lunch-memory{position:relative;right:auto;bottom:auto;width:86%;height:205px;margin:-215px auto 30px!important;padding:7px 7px 42px}
+ .lunch-memory figcaption{font-size:14px;bottom:13px}
+ .org-shadow{position:relative;right:auto;top:auto;width:100%;transform:rotate(1.5deg);margin-top:0}
+ .org-shadow .org-copy.stamp{padding:32px 29px 30px;transform:none;margin:0}
+ .deck .org-token{top:340px;right:8px;width:115px;height:115px;gap:4px;padding:12px}
+ .org-token img{width:26px;height:38px}.deck .org-token span{font-size:12px}.deck .org-token em{font-size:14px}
+ .case-grid{left:auto;right:auto}.case-card{padding:12.6px 12.6px 21.6px}
+ .weekend.weekend-poster{padding:110px 25px 40px}
+ .weekend-art{position:relative;left:auto;top:auto;width:100%;height:530px}
+ .weekend-art h2{font-size:30px;line-height:1.04}
+ .weekend-image{top:25%;height:41%}
+ .weekend-title{top:68%;font-size:32px}
+ .camp-circle{width:39px;height:39px}.camp-circle-one{top:18%;left:-3%}.camp-circle-two{top:35%;right:-4%}.camp-circle-three{top:62%}.camp-circle-four{width:28px;height:28px;bottom:9%;right:13%}
+ .weekend-programme{position:relative;left:auto;top:auto;width:100%}
+ .weekend-programme h3{font-size:25px;margin-bottom:14px}.weekend-programme .day p{font-size:15px}.weekend-programme .programme-note{font-size:13px}
+ .deck .options-sky{display:block;padding:105px 25px 390px;background:#99bfd6}
+ .options-sky:after{display:none}
+ .options-sky .options-forest-photo{position:absolute;inset:auto 0 0;width:100%;height:390px;margin:0!important;z-index:-2}
+ .options-sky .options-forest-photo>img{object-position:center;transform:none}
+ .options-sky .options-heading,.options-sky .options-copy{position:relative;left:auto;top:auto;width:100%;margin:0}
+ .options-sky h2{font-size:35px}
+ .options-sky .options-copy{margin-top:28px;padding-bottom:30px}
+ .options-sky .options-copy>p,.options-sky .option-list li{font-size:15px}
+ .options-sky .options-copy .options-note{font-size:13px}
+ .options-sky .slide-number{color:#fff9ec}
+}
+
+/* Уточнение пропорций и карточек по следующему раунду правок. */
+.cover .backdrop{transform:scaleX(-1)}
+.cover .polaroid{width:40%;top:5%}
+.cover .photo-window{aspect-ratio:4/3;overflow:hidden}
+.cover .photo-window>img{transform:scale(1.2);transform-origin:50% 40%}
+.cover .polaroid h1{font-size:3cqw;line-height:1.04}
+.cover .polaroid p{font-size:1.2cqw;line-height:1.42;margin-top:15px}
+.cover .polaroid-copy{padding:17px 12px 19px}
+.cover-portrait-wrap>img.cover-portrait{transform:none;object-position:45% center}
+.people-main{background:#fff}
+.people-copy{width:39%}
+.people-small{padding:19px}
+.people-small-window{width:100%;height:100%;overflow:hidden}
+.people-small-window>img{width:100%;height:100%;object-fit:cover;object-position:50% 42%;transform:scale(1.12);transform-origin:50% 42%}
+.people-token{background:#dce7ad;padding:18px 24px;border-radius:38% 48% 35% 44% / 42% 38% 49% 43%;left:44%;bottom:7%;box-shadow:0 5px 12px #193f3015}
+.field-label{left:67%;right:auto;width:fit-content;max-width:28%;padding-right:23px}
+.lunch-memory{padding-bottom:49px}
+.lunch-memory figcaption{font-size:1.6cqw;bottom:14px}
+.org-token{width:124px;height:124px;display:flex;align-items:center;justify-content:center;padding:9px;gap:0}
+.org-token img{position:absolute;top:-35px;left:40px;width:47px;height:62px;transform:rotate(-8deg)}
+.org-token span{display:block;text-align:center;font-size:18px;line-height:1.08}.org-token em{font-size:21px}
+.case-grid{left:13%;right:13%}
+.case-card{padding:9px 9px 17px}
+.case-photo{aspect-ratio:4/3}
+.cases-subtitle{bottom:8%}
+.weekend-art{top:15%;height:77%}
+.weekend-art h2{font-size:3.4cqw}
+.weekend-image{left:6%;top:25%;width:88%;height:auto;aspect-ratio:4/3}
+.weekend-image>img{object-position:center}
+.weekend-title{top:91%;font-size:2.75cqw;white-space:nowrap}
+.camp-circle-one{top:18%;left:-5%}.camp-circle-two{top:43%;right:0}.camp-circle-three{top:82%;left:2%}.camp-circle-four{bottom:-14%;right:15%}
+.camp-circle-five{top:1%;right:-8%;width:2.7cqw;height:2.7cqw;background:#dce7ad}
+.camp-circle-six{top:65%;left:-7%;width:2.6cqw;height:2.6cqw;background:#cce6d5}
+.camp-circle-seven{top:88%;right:-7%;width:2.3cqw;height:2.3cqw;background:#193f30}
+.options-cards{color:#fff9ec}
+.options-cards:after{background:linear-gradient(180deg,#193f30e6 0%,#193f30c9 34%,#193f3055 55%,transparent 72%)}
+.options-cards .options-forest-photo>img{transform:translateY(26%) scale(1.18);transform-origin:50% 0}
+.options-cards .options-heading{left:5%;top:7.5%;width:90%;text-align:center}
+.options-cards h2{font-size:3.9cqw;line-height:1.08;white-space:nowrap}
+.options-cards h2 em{display:inline}
+.options-cards .options-copy{left:5%;top:18%;width:90%;text-align:center}
+.options-cards .options-copy>.options-intro{font-size:1.55cqw;line-height:1.4}
+.options-cards .option-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:25px 0 23px;text-align:left}
+.options-cards .option-list li{font-size:1.3cqw;line-height:1.4;padding:43px 24px 21px;border:1px solid #fff9ec66;border-radius:7px;background:#193f307a;min-height:139px}
+.options-cards .option-list li:before{left:24px;top:16px;font-size:13px;color:#dce7ad}
+.options-cards .options-copy .options-note{font-size:1.15cqw;line-height:1.5}
+.options-cards .slide-number{color:#fff9ec}
+@media(min-width:901px) and (max-width:1100px){
+ .cover .polaroid{width:42%}.cover .polaroid h1{font-size:3.1cqw}.cover .polaroid p{font-size:1.25cqw}
+ .people-copy{width:40%}
+ .case-grid{left:13%;right:13%}.cases-subtitle{bottom:8%}
+ .options-cards .options-heading{top:7.5%}.options-cards .options-copy{top:18%}
+ .options-cards .option-list{gap:15px;margin:20px 0}
+ .options-cards .option-list li{font-size:1.45cqw;padding:37px 19px 17px;min-height:131px}
+ .options-cards .option-list li:before{left:19px;top:13px}
+ .options-cards .options-copy .options-note{font-size:1.25cqw}
+}
+@media(max-width:900px){
+ .cover .polaroid{width:100%;top:auto}
+ .cover .polaroid h1{font-size:34px}.cover .polaroid p{font-size:14px;line-height:1.45}
+ .cover .polaroid p br{display:none}
+ .people-copy{width:100%}.people-small{padding:15px}
+ .people-token{left:auto;bottom:auto;margin:23px 0 0 5px;width:fit-content;padding:17px 24px}
+ .field-label{left:auto;right:auto;width:95%;max-width:none}
+ .lunch-memory{padding-bottom:46px}.lunch-memory figcaption{font-size:16px;bottom:12px}
+ .deck .org-token{width:110px;height:110px;top:345px;padding:9px}
+ .org-token img{left:35px;top:-29px;width:42px;height:55px}
+ .deck .org-token span{font-size:16px}.deck .org-token em{font-size:19px}
+ .case-grid{left:auto;right:auto}.case-card{padding:8px 8px 17px}.cases-subtitle{bottom:auto}
+ .weekend-art{top:auto;height:530px}
+ .weekend-art h2{font-size:31px}
+ .weekend-image{top:25%;width:88%;aspect-ratio:4/3;height:auto}
+ .weekend-title{top:76%;font-size:22px}
+ .camp-circle-one{top:19%}.camp-circle-two{top:39%}.camp-circle-three{top:68%}.camp-circle-four{bottom:8%}
+ .camp-circle-five{width:25px;height:25px;right:-4%}.camp-circle-six{width:24px;height:24px;top:55%;left:-5%}.camp-circle-seven{width:23px;height:23px;top:79%;right:-4%}
+ .deck .options-cards{padding:45px 25px 360px;background:#193f30}
+ .options-cards:after{display:block;background:linear-gradient(180deg,#193f30 0%,#193f30 60%,transparent 88%)}
+ .options-cards .options-heading{position:relative;left:auto;top:auto;width:100%}
+ .options-cards h2{white-space:normal;font-size:32px;line-height:1.08}
+ .options-cards .options-copy{position:relative;left:auto;top:auto;width:100%;margin-top:24px;padding-bottom:25px}
+ .options-cards .options-copy>.options-intro{font-size:16px}
+ .options-cards .option-list{grid-template-columns:minmax(0,1fr);gap:13px;margin:22px 0}
+ .options-cards .option-list li{font-size:16px;padding:38px 20px 18px;min-height:0;background:#fff9ec12}
+ .options-cards .option-list li:before{left:20px;top:13px}
+ .options-cards .options-copy .options-note{font-size:13px;line-height:1.5}
+ .options-cards .options-forest-photo{height:390px}
+ .options-cards .options-forest-photo>img{transform:none}
+}
+
+/* Уточнение цвета неба, компактности карточек и оптических отступов. */
+.post-actions>svg:first-child{fill:#e74747;stroke:#e74747}
+.cover .polaroid{width:36.5%}
+.people-main{background:#fff9ec}
+.people-token{border-radius:3px 40px 3px 40px;left:48%;bottom:9%;padding:18px 24px}
+.lunch-memory{bottom:11%}
+.lunch-memory figcaption{bottom:18px}
+.weekend-art{top:18%;height:72%}
+.weekend-art h2{line-height:1.03}
+.weekend-art h2 em{display:inline;margin:0}
+.weekend-image{left:12.5%;top:28%;width:75%}
+.weekend-title{top:86%}
+.weekend-programme{top:23%}
+.camp-circle-four{bottom:-4%}
+.options-cards:after{background:linear-gradient(180deg,#164e7db8 0%,#1a5f8fa8 37%,#1a5f8f00 60%)}
+.options-cards .option-list{margin:18px 0 14px}
+.options-cards .option-list li{min-height:0;padding:18px 22px 18px 49px;border:0;color:#193f30}
+.options-cards .option-list li:before{left:18px;top:20px;color:#193f30}
+.options-cards .option-list li:nth-child(1){background:#cce6d5}
+.options-cards .option-list li:nth-child(2){background:#f5bc94}
+.options-cards .option-list li:nth-child(3){background:#fff9ec}
+@media(min-width:901px) and (max-width:1100px){
+ .cover .polaroid{width:38%}
+ .options-cards .option-list li{padding:16px 17px 16px 43px}
+ .options-cards .option-list li:before{left:14px;top:18px}
+}
+@media(max-width:900px){
+ .cover .polaroid{width:100%}
+ .people-token{left:auto;bottom:auto;margin:12px 0 0 12%;transform:translateY(-24px) rotate(-7deg);z-index:5}
+ .lunch-memory{bottom:auto;margin-top:-245px!important}
+ .lunch-memory figcaption{bottom:16px}
+ .weekend-art{top:auto;height:505px}
+ .weekend-image{left:12.5%;top:28%;width:75%}
+ .weekend-title{top:67%}
+ .weekend-programme{top:auto}
+ .camp-circle-four{bottom:8%}
+ .deck .options-cards{background:#4d789b}
+ .options-cards:after{background:linear-gradient(180deg,#3c6d93 0%,#3c6d93 58%,#3c6d9300 90%)}
+ .options-cards .option-list{margin:20px 0 17px}
+ .options-cards .option-list li{font-size:16px;padding:18px 18px 18px 45px}
+ .options-cards .option-list li:before{left:16px;top:20px}
+}
+
+/* 16 октября: чистое исходное небо и двухколоночный текст. */
+.cover .polaroid{width:34.5%}
+.people-token{left:auto;right:32%;bottom:8%;box-shadow:none;filter:none;text-shadow:none}
+.weekend-art h2{font-size:4cqw;line-height:1.03}
+.weekend-image{top:25%}
+.weekend-title{top:83%;font-size:3.4cqw;line-height:1.03;white-space:normal}
+.options-plain{color:#fff9ec}
+.options-plain:after{display:none;background:none}
+.options-plain .options-forest-photo>img{transform:translateY(26%) scale(1.18);transform-origin:50% 0;filter:none}
+.options-plain .options-heading{left:5%;top:15%;width:43%;text-align:left}
+.options-plain h2{font-size:4cqw;line-height:1.06;white-space:normal}
+.options-plain h2 em{display:inline}
+.options-plain .options-copy{left:52%;top:15%;width:43%;text-align:left}
+.options-plain .options-copy>.options-intro{font-size:1.4cqw;line-height:1.4}
+.options-plain .option-list{display:block;margin:20px 0}
+.options-plain .option-list li{font-size:1.3cqw;line-height:1.4;padding:12px 0 12px 33px;background:none;border:0;border-top:1px solid #fff9ec70;border-radius:0;color:inherit;min-height:0}
+.options-plain .option-list li:before{left:0;top:15px;font-size:12px;color:inherit}
+.options-plain .options-copy .options-note{font-size:1.15cqw;line-height:1.5}
+.options-plain .slide-number{color:#fff9ec}
+@media(min-width:901px) and (max-width:1100px){
+ .cover .polaroid{width:36%}
+ .options-plain .options-heading,.options-plain .options-copy{top:15%}
+ .options-plain .option-list li{font-size:1.4cqw}
+ .options-plain .options-copy .options-note{font-size:1.25cqw}
+}
+@media(max-width:900px){
+ .cover .polaroid{width:100%}
+ .people-token{right:auto;left:auto;bottom:auto;width:fit-content;margin:-8px 0 20px 5%;transform:rotate(-7deg)}
+ .weekend-art h2{font-size:39px}
+ .weekend-image{top:25%}
+ .weekend-title{top:62%;font-size:30px}
+ .deck .options-plain{display:block;padding:60px 25px 385px;background:#99bfd6}
+ .options-plain .options-heading,.options-plain .options-copy{position:relative;left:auto;top:auto;width:100%;margin:0}
+ .options-plain h2{font-size:28px}
+ .options-plain .options-copy{margin-top:30px}
+ .options-plain .options-copy>.options-intro,.options-plain .option-list li{font-size:16px}
+ .options-plain .options-copy .options-note{font-size:13px}
+ .options-plain .options-forest-photo>img{transform:none}
+}
+
+/* Приближение фотографий без дополнительного неба. */
+.options-plain{background:#99bfd6}
+.options-plain .options-forest-photo>img{object-position:center top;transform:scale(1.45);transform-origin:50% 0}
+.options-plain .options-heading,.options-plain .options-copy{top:6%}
+.lunch-memory{width:29%}
+.lunch-image{width:100%;height:100%;overflow:hidden;border-radius:1px}
+.lunch-image>img{width:100%;height:100%;object-fit:cover;object-position:50% 60%;transform:scale(1.2);transform-origin:50% 60%}
+.people-token{bottom:19%}
+.cover .photo-window>img{transform:none;object-position:50% 48%}
+@media(min-width:901px) and (max-width:1100px){.options-plain .options-heading,.options-plain .options-copy{top:6%}}
+@media(max-width:900px){
+ .options-plain .options-heading,.options-plain .options-copy{top:auto}
+ .options-plain .options-forest-photo>img{transform:none;object-position:center}
+ .lunch-memory{width:76%}
+ .people-token{bottom:auto;margin-top:-14px}
+}
+
+/* Новые фотографии и более компактные отступы. */
+.cover-portrait-wrap>img.cover-portrait{object-position:50% 75%;transform:none}
+.weekend-art h2{transform:translateY(14px)}
+.weekend-title{top:82%}
+.options-plain .option-list{margin:16px 0 6px}
+.options-plain .option-list li{padding-top:10px;padding-bottom:10px}
+.options-plain .option-list li:before{top:13px}
+.memories-copy{width:36%}
+.when-front>img{object-position:45% center}
+.people-small-window>img{transform:none;object-position:50% 60%}
+@media(min-width:901px) and (max-width:1100px){.memories-copy{width:38%}}
+@media(max-width:900px){
+ .weekend-art h2{transform:translateY(8px)}
+ .weekend-title{top:61%}
+ .memories-copy{width:100%}
+}
+
+/* Равные отступы вокруг фотографии программы и новые портреты. */
+.weekend-art{display:flex;flex-direction:column;align-items:center;gap:16px;height:auto}
+.weekend-art h2{width:100%;transform:none}
+.weekend-art .weekend-image{position:relative;left:auto;top:auto;width:75%;height:auto;flex:none;margin:0 auto!important}
+.weekend-title{position:relative;left:auto;right:auto;top:auto;width:100%;margin:0}
+.org-photo .caption{bottom:0;height:47px;display:flex;align-items:center;justify-content:center;gap:.25em;line-height:1.15}
+.cover-portrait-wrap>img.cover-portrait{object-position:50% center;transform:scale(2.1);transform-origin:50% 0}
+.people-main>img{object-position:center}
+.people-small-window>img{object-position:50% 42%}
+@media(max-width:900px){
+ .weekend-art{height:auto;margin-bottom:40px}
+ .weekend-art h2{transform:none}
+ .weekend-title{top:auto}
+ .org-photo .caption{height:40px}
+}
+
+/* Чистая перфорация второй страницы и лёгкое затемнение седьмой. */
+.people-small.stamp{mask:none;clip-path:url(#people-photo-edge);border-radius:0}
+.options-plain .slide-number{color:#193f30}
+.options-plain .options-forest-photo>img{filter:brightness(.95)}
+@media(max-width:900px){.people-small.stamp{clip-path:url(#people-photo-edge-mobile)}}
+
+/* Крупный заголовок и два небольших цветных акцента. */
+.options-plain h2{font-size:5.2cqw}
+.options-accent{position:absolute;border-radius:50%;pointer-events:none}
+.options-accent-one{left:41%;top:39%;width:32px;height:32px;background:#cce6d5}
+.options-accent-two{left:45%;top:40%;width:20px;height:20px;background:#f5bc94}
+.cover-portrait-wrap>img.cover-portrait{transform:translateY(-13%) scale(1.25);transform-origin:50% 0}
+@media(min-width:901px) and (max-width:1100px){.options-plain h2{font-size:5cqw}}
+@media(max-width:900px){
+ .options-plain h2{font-size:41px}
+ .options-accent-one{left:auto;right:18px;top:20px;width:25px;height:25px}
+ .options-accent-two{left:auto;right:53px;top:31px;width:16px;height:16px}
+}
+@media(max-width:360px){.options-plain h2{font-size:35px}}
+
+/* Единый крупный кегль заголовков программы и ровный ритм обложки. */
+.weekend-art{top:15%}
+.weekend-art h2,.weekend-title{font-size:5.2cqw;line-height:1.03}
+.cover .polaroid h1{font-size:3.4cqw;line-height:1.08}
+.cover .polaroid h1>span,.cover .polaroid h1>em{display:block;margin:0;line-height:1.08}
+@media(min-width:901px) and (max-width:1100px){
+ .weekend-art h2,.weekend-title{font-size:5cqw}
+ .cover .polaroid h1{font-size:3.5cqw}
+}
+@media(max-width:900px){
+ .weekend-art{top:auto}
+ .weekend-art h2,.weekend-title{font-size:41px}
+ .cover .polaroid h1{font-size:37px}
+}
+@media(max-width:360px){.weekend-art h2,.weekend-title{font-size:35px}.cover .polaroid h1{font-size:33px}}
+
+.options-accent-one{left:35%;top:30%}
+.options-accent-two{left:39%;top:32%}
+.people-small{background:#dce7ad}
+.people-token{background:#f5bc94}
+@media(min-width:901px){.cover-note{bottom:6%}}
+@media(max-width:900px){
+ .options-accent-one{left:auto;right:18px;top:20px}
+ .options-accent-two{left:auto;right:53px;top:31px}
+}
