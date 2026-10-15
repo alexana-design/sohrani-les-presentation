@@ -554,6 +554,7 @@ html{scroll-padding-top:12px}body.presentation{padding-bottom:72px}.deck{padding
    База согласования: слайд шириной около 940 px. */
 @media(min-width:901px){
  .deck .slide>.brand{width:14cqw}
+ .cover-paper{left:7%}
  .cover-paper .cover-portrait-wrap{width:14.5cqw;height:14.5cqw}
  .cover-seal{width:12.8cqw;height:12.8cqw}
  .when-back{padding:1.7cqw}
