@@ -1,0 +1,300 @@
+/* Portrait review edition. Desktop styles remain in presentation.css. */
+@media screen and (max-width:900px){
+ .deck{padding:12px;gap:16px}
+ .deck .slide{height:auto;min-height:0;max-height:none;aspect-ratio:9/16;padding:0;overflow:hidden}
+ .deck .slide>.brand{top:22px;left:7%;width:112px}
+ .deck h2{font-size:clamp(28px,8.5cqw,36px);line-height:1.03}
+ .deck p,.deck li{font-size:clamp(13px,3.8cqw,16px);line-height:1.4}
+ .deck .slide-number{right:7%;bottom:17px;font-size:12px}
+ .deck-nav{right:14px;bottom:8px;opacity:.88;transform:scale(.85);transform-origin:bottom right}
+ .deck .copy p+p{margin-top:12px}
+
+ /* Cover: logo, main card, secondary cards, closing line. */
+ .deck .cover-service-layout>.brand{width:135px;left:7%;right:auto;top:20px}
+ .deck .cover-service-layout .polaroid{position:absolute;left:15%;top:10%;width:70%;height:auto;padding:9px;transform:rotate(-2deg);border-radius:6px}
+ .deck .cover-service-layout .photo-window{height:auto;aspect-ratio:1.23;border-radius:2px}
+ .deck .cover-service-layout .photo-window>img{transform:scale(1.12);transform-origin:center}
+ .deck .cover-service-layout .polaroid-copy{padding:12px 3px 10px}
+ .deck .cover-service-layout .polaroid h1{font-size:clamp(25px,7.7cqw,34px);line-height:1.04}
+ .deck .cover-service-layout .cover-photo-smooth{position:absolute;left:5%;right:auto;top:61%;width:37%;height:24%;padding:7px 7px 18px;transform:rotate(-8deg)}
+ .deck .cover-service-layout .cover-paper{position:absolute;left:auto;right:5%;top:62%;width:45%;height:24%;padding:30px 13px 12px;transform:rotate(7deg);justify-content:center}
+ .deck .cover-service p{font-size:clamp(11px,3.25cqw,14px);line-height:1.3}
+ .deck .cover-service-layout .cover-seal{left:auto;right:5%;top:54%;width:76px;height:76px;transform:rotate(7deg)}
+ .deck .cover-service-layout .cover-note{position:absolute;left:8%;right:8%;width:84%;top:auto;bottom:3%;margin:0;font-size:12px;line-height:1.3;text-align:center}
+
+ /* Two people photographs stay together in the lower half. */
+ .deck .people-copy{position:absolute;left:7%;top:11%;width:86%}
+ .deck .people h2{font-size:8.5cqw;margin-bottom:16px}
+ .deck .people-copy p{font-size:3.8cqw;line-height:1.4}
+ .deck .people-main{position:absolute;left:auto;right:8%;top:51%;width:60%;height:25%;padding:8px 8px 17px;margin:0!important}
+ .deck .people-small-smooth{position:absolute;left:auto;right:6%;top:auto;bottom:5%;width:65%;height:24%;padding:8px 8px 34px;margin:0!important}
+ .deck .people-small-caption{height:34px;font-size:13px}
+ .deck .people-token{position:absolute;left:6%;right:auto;top:auto;bottom:14%;width:104px;height:104px;padding:13px;gap:4px;margin:0;transform:rotate(-7deg)}
+ .deck .people-token .sprout{width:28px;height:28px}
+ .deck .people-token span,.deck .people-token em{font-size:18px;line-height:1.06}
+
+ .deck .planting .backdrop{height:100%;transform:none;object-position:65% center}
+ .deck .planting:after{display:none}
+ .deck .planting-copy{position:absolute;left:7%;top:12%;width:86%;padding:24px;transform:rotate(-2deg)}
+ .deck .planting-copy h2{font-size:8cqw}
+ .deck .planting-copy p{font-size:3.8cqw;margin-top:13px}
+ .deck .field-label{position:absolute;left:9%;right:auto;bottom:7%;width:78%;max-width:none;padding:14px 16px 14px 50px}
+ .deck .field-label>img{width:25px;left:14px}
+ .deck .field-label span{font-size:12px}
+ .deck .field-label strong{font-size:22px}
+
+ .deck .lunch-copy{position:absolute;left:7%;top:11%;width:86%}
+ .deck .lunch h2{font-size:9cqw;margin-bottom:16px}
+ .deck .lunch-copy p{font-size:3.8cqw;margin-top:12px;max-width:none}
+ .deck .circle-photo{position:absolute;left:0;right:0;top:auto;bottom:0;width:100%;height:42%;margin:0}
+ .deck .lunch-memory{position:absolute;right:6%;bottom:5%;width:58%;height:23%;padding:7px 7px 34px}
+ .deck .lunch-memory figcaption{bottom:0;height:34px;font-size:12px;display:flex;align-items:center;justify-content:center;gap:.25em}
+ .deck .photo-dot{display:none}
+
+ /* The sticker sits beside the photo, away from its caption. */
+ .deck .org-photo{position:absolute;left:7%;top:11%;width:62%;height:27%;margin:0;padding:8px 8px 35px;transform:rotate(-4deg)}
+ .deck .org-photo .caption{height:35px;font-size:13px;bottom:0}
+ .deck .org-token{position:absolute;left:auto;right:3%;top:24%;bottom:auto;width:92px;height:92px;padding:10px;gap:2px}
+ .deck .org-token img{position:absolute;top:-13px;width:27px;height:32px}
+ .deck .org-token span,.deck .org-token em{font-size:13px;line-height:1.08}
+ .deck .org-shadow{position:absolute;left:7%;right:auto;top:43%;width:86%;margin:0;transform:rotate(1deg)}
+ .deck .org-shadow .org-copy.stamp{padding:23px 24px;transform:none}
+ .deck .org-copy h2{font-size:8cqw}
+ .deck .org-copy .list-intro{margin-top:12px;font-size:12px}
+ .deck .org-copy li{font-size:3.65cqw;line-height:1.3;padding:9px 0 9px 25px}
+ .deck .org-copy li:before{top:10px;font-size:11px}
+ .deck .org-copy .support{font-size:3.3cqw;line-height:1.3;margin-top:10px;padding-top:10px}
+
+ .deck .weekend-art{position:absolute;left:7%;top:10%;width:86%;height:auto;gap:7px;margin:0}
+ .deck .weekend-art h2{font-size:7.5cqw;line-height:1.02;max-width:none}
+ .deck .weekend-art .weekend-image{width:48%;height:auto;aspect-ratio:4/3}
+ .deck .weekend-title{font-size:6.7cqw;line-height:1.02}
+ .deck .camp-circle{width:25px;height:25px}
+ .deck .camp-circle-one{left:4%;top:24%}.deck .camp-circle-two{right:3%;top:50%}
+ .deck .camp-circle-three{left:6%;top:78%}.deck .camp-circle-four,.deck .camp-circle-six{display:none}
+ .deck .weekend-programme{position:absolute;left:7%;top:47%;width:86%}
+ .deck .weekend-programme h3{font-size:21px;margin:0 0 7px}
+ .deck .weekend-programme .day p{font-size:3.7cqw;line-height:1.35}
+ .deck .weekend-programme .day+.day{margin-top:14px;padding-top:13px}
+ .deck .weekend-programme .programme-note{margin-top:13px;padding-top:12px;font-size:3.2cqw;line-height:1.3}
+
+ .deck .options-sky{display:block;background:#9fc6dc;padding:0}
+ .deck .options-sky .options-heading{position:absolute;left:7%;top:6%;width:86%;margin:0;color:#193f30}
+ .deck .options-sky h2{font-size:8.2cqw;line-height:1.03}
+ .deck .options-sky .options-copy{position:absolute;left:7%;top:23%;width:86%;margin:0;padding:0;color:#193f30}
+ .deck .options-sky .options-copy>p{font-size:3.6cqw;line-height:1.3}
+ .deck .options-sky .option-list{margin:10px 0 13px}
+ .deck .options-sky .option-list li{font-size:3.6cqw;line-height:1.3;padding:8px 0 8px 27px;color:#193f30}
+ .deck .options-sky .option-list li:before{top:9px;color:#193f30}
+ .deck .options-sky .options-copy .options-note{font-size:3.1cqw;line-height:1.3;color:#193f30}
+ .deck .options-sky .options-forest-photo{position:absolute;left:0;right:0;top:auto;bottom:0;width:100%;height:44%;margin:0!important}
+ .deck .options-sky .options-forest-photo>img{object-fit:cover;object-position:50% 70%;transform:none;filter:brightness(.95)}
+ .deck .options-accent{display:none}
+
+ .deck .when-heading{position:absolute;left:7%;top:11%;width:86%}
+ .deck .when h2{font-size:8.7cqw}
+ .deck .when-copy{position:absolute;left:7%;top:24%;width:86%;margin:0}
+ .deck .when-copy>p{font-size:3.8cqw}
+ .deck .group-card{width:45%;padding:14px 13px;margin-top:17px}
+ .deck .group-card .group-label{font-size:3cqw;line-height:1.3}
+ .deck .group-card .group-number{font-size:12cqw;margin:8px 0 0;line-height:1}
+ .deck .group-card .group-number small{font-size:13px;display:block;margin-top:4px}
+ .deck .when-copy .when-note{width:43%;font-size:3.1cqw;line-height:1.35;margin-top:13px}
+ .deck .when-collage{position:absolute;left:auto;right:12%;top:61%;width:68%;height:31%;aspect-ratio:auto;margin:0}
+ .deck .when-back{padding:8px}
+ .deck .when-back-window>img{transform:none;object-position:50% 0%}
+ .deck .when-front{padding:6px}
+ .deck .season-badge{width:70px;left:56%;top:75%}
+
+ .deck .care .backdrop{left:0;top:0;width:100%;height:50%;object-position:36% 45%;transform:none;mask:none}
+ .deck .care-card{position:absolute;left:7%;right:auto;top:42%;width:86%;aspect-ratio:auto;padding:28px 24px 30px;transform:rotate(-2deg)}
+ .deck .care h2{font-size:8cqw;margin-bottom:14px}
+ .deck .care-card p{font-size:3.6cqw;line-height:1.4}
+ .deck .care-promise{margin-top:12px}
+ .deck .care-badge{right:3%;top:35%;width:88px;height:88px}
+ .deck .care-badge strong{font-size:35px}.deck .care-badge em{font-size:17px}
+
+ .deck .memories-heading{position:absolute;left:7%;top:11%;width:86%}
+ .deck .memories h2{font-size:8.5cqw}
+ .deck .memories-copy{position:absolute;left:7%;top:29%;width:86%;margin:0}
+ .deck .memories-copy p{font-size:3.7cqw;line-height:1.4}
+ .deck .memories-copy p+p{margin-top:12px}
+ .deck .memories .memory-photo{position:absolute;left:0;right:0;bottom:0;top:auto;width:100%;height:40%;margin:0!important}
+ .deck .girl-frame{left:17%;top:9%;width:70%;height:80%;border-width:9px;border-bottom-width:40px}
+ .deck .post-actions{left:-9px;right:-9px;bottom:-40px;height:40px;padding:0 11px;gap:11px}
+ .deck .post-actions svg{width:20px;height:20px}
+ .deck .memory-photo .hole-a{width:39px;height:39px;top:-20px;left:8%}
+ .deck .memory-photo .hole-b{width:24px;height:24px;top:-11px;left:80%}
+
+ .deck .cases-heading{position:absolute;left:7%;top:11%;width:86%}
+ .deck .cases h2,.deck .cases-title{font-size:22cqw;line-height:1}
+ .deck .case-grid{position:absolute;left:8%;right:8%;top:25%;height:61%;display:grid;grid-template-columns:1fr;grid-template-rows:repeat(3,minmax(0,1fr));gap:13px;margin:0}
+ .deck .case-card{display:grid;grid-template-columns:43% 57%;padding:7px;border-radius:4px;min-height:0;transform:rotate(-2deg)}
+ .deck .case-card:nth-child(2){transform:rotate(2deg)}
+ .deck .case-card:nth-child(3){transform:rotate(-1deg)}
+ .deck .case-photo{aspect-ratio:auto;height:100%;min-height:0}
+ .deck .case-photo>img{object-fit:cover}
+ .deck .case-card figcaption{padding:9px 8px 4px 12px}
+ .deck .case-card h3{font-size:5cqw;line-height:1.05;margin:0 0 7px}
+ .deck .case-card p{font-size:3.2cqw;line-height:1.3}
+ .deck .cases-subtitle{position:absolute;left:7%;bottom:5%;width:86%;margin:0;font-size:5cqw}
+ .deck .case-leaf{width:30px;height:40px}
+ .deck .case-leaf-one{left:0;bottom:9%;top:auto}.deck .case-leaf-two{right:0;top:22%}.deck .case-leaf-three{display:none}
+
+ .deck .contact-card.stamp{position:absolute;left:7%;right:auto;top:16%;width:86%;padding:29px 25px;transform:rotate(1deg)}
+ .deck .contact h2{font-size:8.5cqw;margin-bottom:17px}
+ .deck .contact-card p{font-size:3.8cqw;line-height:1.4}
+ .deck .contact-card p+p{margin-top:12px}
+ .deck .contact-links{margin-top:20px;gap:12px}
+ .deck .contact-links a{font-size:3.6cqw}
+ .deck .contact-links .telegram{font-size:3.8cqw;padding:12px 13px;gap:12px}
+}
+
+/* Second portrait pass: fixed 9:16 composition, with connected collages. */
+@media screen and (max-width:900px){
+ .deck .slide{width:min(100%,440px);justify-self:center}
+ .deck .slide>.brand{top:5%;width:29cqw}
+ .deck .cover-service-layout>.brand{top:4%;width:36cqw}
+ .deck .cover-service-layout .polaroid{left:14%;top:12%;width:72%;padding:8px}
+ .deck .cover-service-layout .photo-window{aspect-ratio:1.4}
+ .deck .cover-service-layout .polaroid-copy{padding:10px 2px 9px}
+ .deck .cover-service-layout .polaroid h1{font-size:7.6cqw;line-height:1.02}
+ .deck .cover-service-layout .cover-photo-smooth{left:5%;top:58%;width:41%;height:29%;padding:6px 6px 16px}
+ .deck .cover-service-layout .cover-paper{right:4%;top:61%;width:47%;height:27%;padding:27px 12px 12px}
+ .deck .cover-service-layout .cover-seal{right:4%;top:54%;width:19cqw;height:19cqw}
+ .deck .cover-service p{font-size:3.1cqw;line-height:1.25}
+ .deck .cover-service-layout .cover-note{bottom:3%;font-size:3.1cqw}
+ .deck .people-copy{top:11%}
+ .deck .people h2{font-size:8cqw;margin-bottom:10px}
+ .deck .people-copy p{font-size:3.5cqw;line-height:1.34}
+ .deck .people-copy p+p{margin-top:9px}
+ .deck .people-main{right:8%;top:46%;width:80%;height:31%;padding:7px 7px 15px}
+ .deck .people-small-smooth{right:5%;bottom:5%;width:65%;height:25%;padding:7px 7px 30px}
+ .deck .people-small-caption{height:30px;font-size:3.4cqw}
+ .deck .people-token{left:4%;bottom:7%;width:25cqw;height:25cqw;padding:11px}
+ .deck .people-token .sprout{width:7cqw;height:7cqw}
+ .deck .people-token span,.deck .people-token em{font-size:4.8cqw}
+ .deck .planting .backdrop{object-position:52% 0%}
+ .deck .planting-copy{top:42%;left:6%;width:88%;padding:19px 22px}
+ .deck .planting-copy h2{font-size:7.5cqw}
+ .deck .planting-copy p{font-size:3.5cqw;line-height:1.32;margin-top:10px}
+ .deck .field-label{bottom:4%;left:9%;width:79%;padding-top:10px;padding-bottom:10px}
+ .deck .field-label strong{font-size:5.6cqw}
+ .deck .field-label span{font-size:3cqw}
+ .deck .lunch-copy{top:11%}
+ .deck .lunch h2{font-size:8.5cqw;margin-bottom:11px}
+ .deck .lunch-copy p{font-size:3.5cqw;line-height:1.34;margin-top:10px}
+ .deck .circle-photo{height:51%}
+ .deck .lunch-memory{bottom:5%;height:29%;width:59%;padding-bottom:30px}
+ .deck .lunch-memory figcaption{height:30px;font-size:3cqw;white-space:nowrap}
+ .deck .photo-dot{display:block;background-image:url("site-site-048.jpg");background-size:500%;z-index:2}
+ .deck .dot-a{left:9%;right:auto;top:44%;bottom:auto;width:34px;height:34px;background-position:30% 30%}
+ .deck .dot-b{left:25%;right:auto;top:47%;bottom:auto;width:20px;height:20px;background-position:65% 45%}
+ .deck .dot-c{display:none}
+ .deck .org-photo{top:11%;width:68%;height:27%;padding:7px 7px 32px}
+ .deck .org-photo .caption{height:32px;font-size:3.3cqw}
+ .deck .org-token{left:73%;right:auto;top:24%;width:24cqw;height:24cqw}
+ .deck .org-shadow{top:40%}
+ .deck .org-shadow .org-copy.stamp{padding:20px 22px}
+ .deck .org-copy h2{font-size:7.5cqw}
+ .deck .org-copy .list-intro{margin-top:9px;font-size:3.1cqw}
+ .deck .org-copy li{font-size:3.5cqw;line-height:1.25;padding-top:7px;padding-bottom:7px}
+ .deck .org-copy .support{font-size:3.1cqw;line-height:1.25;margin-top:8px;padding-top:8px}
+ .deck .weekend-art{top:10%;gap:6px}
+ .deck .weekend-art h2{font-size:8.4cqw}
+ .deck .weekend-art .weekend-image{width:62%}
+ .deck .weekend-title{font-size:7.2cqw}
+ .deck .weekend-programme{top:56%}
+ .deck .weekend-programme h3{font-size:5.2cqw;margin-bottom:5px}
+ .deck .weekend-programme .day p{font-size:3.3cqw;line-height:1.3}
+ .deck .weekend-programme .day+.day{margin-top:10px;padding-top:9px}
+ .deck .weekend-programme .programme-note{font-size:3cqw;line-height:1.25;margin-top:9px;padding-top:8px}
+ .deck .options-sky{background:none}
+ .deck .options-sky:after{display:block;content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(#173a5c55,transparent 67%)}
+ .deck .options-sky .options-forest-photo{inset:0;width:100%;height:100%}
+ .deck .options-sky .options-forest-photo>img{object-position:50% 50%;filter:brightness(.9);transform:scale(1.8);transform-origin:50% 0%}
+ .deck .options-sky .options-heading{top:5%;color:#fff9ec;text-shadow:0 1px 5px #173a5c40}
+ .deck .options-sky h2{font-size:8cqw}
+ .deck .options-sky .options-copy{top:23%;color:#fff9ec;text-shadow:0 1px 5px #173a5c55}
+ .deck .options-sky .options-copy>p,.deck .options-sky .option-list li{color:#fff9ec;font-size:3.4cqw;line-height:1.3}
+ .deck .options-sky .option-list{margin:8px 0 10px}
+ .deck .options-sky .option-list li{padding-top:6px;padding-bottom:6px}
+ .deck .options-sky .option-list li:before{top:7px;color:#fff9ec}
+ .deck .options-sky .options-copy .options-note{font-size:3cqw;color:#fff9ec;line-height:1.25}
+ .deck .when-heading{top:11%}
+ .deck .when h2{font-size:8.4cqw}
+ .deck .when-copy{top:19%}
+ .deck .when-copy>p{font-size:3.5cqw;line-height:1.3}
+ .deck .group-card{width:100%;padding:11px 20px;margin-top:10px}
+ .deck .group-card .group-label{font-size:3cqw}
+ .deck .group-card .group-number{font-size:13cqw;line-height:1;margin:4px 0 0;white-space:nowrap}
+ .deck .group-card .group-number small{font-size:4cqw;display:inline;margin:0 0 0 6px}
+ .deck .when-copy .when-note{width:100%;font-size:3cqw;line-height:1.25;margin-top:8px}
+ .deck .when-copy .when-note br{display:none}
+ .deck .when-collage{top:54%;right:11%;width:76%;height:40%}
+ .deck .season-badge{width:19cqw;left:65%;top:72%}
+ .deck .care .backdrop{height:100%;object-position:36% center}
+ .deck .care-card{top:46%;padding:22px 23px 25px}
+ .deck .care h2{font-size:7.4cqw;margin-bottom:10px}
+ .deck .care-card p{font-size:3.4cqw;line-height:1.32}
+ .deck .care-promise{margin-top:10px}
+ .deck .care-badge{top:39%;width:23cqw;height:23cqw}
+ .deck .memories-heading{top:11%}
+ .deck .memories h2{font-size:7.8cqw}
+ .deck .memories-copy{top:26%}
+ .deck .memories-copy p{font-size:3.5cqw;line-height:1.32}
+ .deck .memories-copy p+p{margin-top:9px}
+ .deck .memories .memory-photo{height:50%}
+ .deck .cases-heading{top:10%;left:4%;width:92%}
+ .deck .cases h2,.deck .cases-title{font-size:27cqw;line-height:.9;letter-spacing:-.075em}
+ .deck .cases-subtitle{top:23%;bottom:auto;left:5%;width:90%;font-size:4.8cqw;line-height:1.1;text-align:center}
+ .deck .case-grid{top:30%;left:19%;right:19%;height:65%;gap:8px;grid-template-rows:repeat(3,minmax(0,1fr))}
+ .deck .case-card{display:block;position:relative;padding:5px;min-height:0}
+ .deck .case-photo{height:62%;width:100%;aspect-ratio:auto}
+ .deck .case-photo>img{object-position:50% 20%}
+ .deck .case-card figcaption{padding:4px 4px 0}
+ .deck .case-card h3{font-size:3.6cqw;margin:0 0 2px;line-height:1.05}
+ .deck .case-card p{font-size:2.65cqw;line-height:1.12}
+ .deck .case-leaf-one{bottom:6%}.deck .case-leaf-two{top:35%}
+}
+
+/* Portrait refinement: fewer logos and balanced labels. */
+@media screen and (max-width:900px){
+ .deck .people>.brand,.deck .lunch>.brand,.deck .weekend>.brand,.deck .when>.brand,.deck .memories>.brand{display:none}
+ .deck .cover-service-layout>.brand{left:50%;right:auto;transform:translateX(-50%)}
+ .deck .people-copy{top:6%}
+ .deck .planting .backdrop{top:-4%;height:104%;object-position:52% 0%}
+ .deck .planting .slide-number{color:#fff9ec}
+ .deck .field-label{left:10%;right:10%;bottom:5%;width:auto;max-width:none;display:grid;grid-template-columns:10cqw max-content;grid-template-areas:'leaf small' 'leaf big';column-gap:10px;justify-content:center;align-items:center;padding:12px 15px}
+ .deck .field-label>img{grid-area:leaf;position:static;left:auto;right:auto;top:auto;bottom:auto;transform:none;width:10cqw;height:11cqw;object-fit:contain}
+ .deck .field-label span{grid-area:small;font-size:3cqw;line-height:1.2}
+ .deck .field-label strong{grid-area:big;font-size:5.3cqw;line-height:1.15}
+ .deck .lunch-copy{top:6%}
+ .deck .circle-photo{clip-path:inset(1px 0 0)}
+ .deck .circle-photo .hole-a{top:-28px;width:56px;height:56px}
+ .deck .org-shadow{top:12%}
+ .deck .org-photo{top:64%}
+ .deck .org-token{top:76%}
+ .deck .weekend-art{top:5%}
+ .deck .weekend-art .weekend-image{width:72%}
+ .deck .weekend-programme{top:55%}
+ .deck .options-sky .options-forest-photo>img{transform:translateX(-5%) scale(1.8);transform-origin:55% 0%}
+ .deck .when-heading{top:5%}
+ .deck .when-copy{top:13%}
+ .deck .group-card .group-number{font-size:20cqw}
+ .deck .when-collage{top:52%;height:42%}
+ .deck .care-card{top:40%;padding-top:64px}
+ .deck .care-badge{top:35%}
+ .deck .memories-heading{top:5%}
+ .deck .memories .desktop-memory-title{display:none}
+ .deck .memories .portrait-memory-title{display:block;font-size:7.4cqw;line-height:1.05}
+ .deck .portrait-memory-title>span{white-space:nowrap}
+ .deck .memories-copy{top:18%}
+ .deck .memories .memory-photo{height:55%}
+ .deck .memory-photo>img{transform:scale(1.25);transform-origin:68% 50%}
+ .deck .cases-subtitle{top:26%}
+ .deck .case-grid{top:32%;height:63%}
+ .deck .case-photo{height:60%}
+ .deck .portrait-case-break{display:block}
+ .deck .case-tree-count{white-space:nowrap}
+}
